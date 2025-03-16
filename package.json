@@ -1,24 +1,36 @@
 {
   "name": "test-demo",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "main": "src/pages/index.tsx",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "prisma-all": "npx prisma format && npx prisma generate && npx prisma db push"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.2"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.7",
+    "@prisma/client": "^6.5.0",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "jsonwebtoken": "^9.0.2",
+    "next": "12.0.0",
+    "pg": "^8.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^16.9.1",
+    "@types/pg": "^8.11.11",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.9",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "prisma": "^6.5.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "typescript": "^4.4.3"
   }
 }
